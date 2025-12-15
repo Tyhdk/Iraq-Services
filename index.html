@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -39,6 +40,15 @@
   }
   </script>
   <!-- نهاية SEO -->
+
+  <!-- PWA (تمت الإضافة هنا فقط بدون لمس SEO أعلاه) -->
+  <link rel="manifest" href="./manifest.webmanifest">
+  <meta name="theme-color" content="#2563eb">
+
+  <!-- iOS (اختياري لكن مفيد) -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <!-- نهاية PWA -->
 
   <style>
     :root{
@@ -254,6 +264,16 @@
 
   showSection('work');
 </script>
+
+<!-- PWA Service Worker Register (تمت الإضافة هنا فقط) -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js').catch(() => {});
+    });
+  }
+</script>
+<!-- نهاية PWA -->
 
 </body>
 </html>
