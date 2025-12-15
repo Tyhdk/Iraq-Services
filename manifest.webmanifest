@@ -1,0 +1,22 @@
+{
+  "name": "خدمات ويب العراق",
+  "short_name": "Web Iraq",
+  "start_url": "/Iraq-Services/",
+  "display": "standalone",
+  "background_color": "#e6f2ff",
+  "theme_color": "#2563eb",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
